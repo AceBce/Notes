@@ -338,6 +338,14 @@ REST(Representational State Transfer),表现形式状态转换
 
 ## SSM整合
 
+## 拦截器
+tomcat服务器拦截了所有请求，把请求划分为对静态资源(HTML,CSS,JS等)和对动态资源的，对动态资源的访问先过过滤器再进spring，再进spring的controller
+* 拦截器是一种动态拦截方法调用的机制，在Springmvc中动态拦截控制器方法的执行
+* 作用：在指定的方法调用前后执行预先设定的代码/阻止原方法执行
+
+拦截器与过滤器的区别：
+* 归属不同：Filter属于Servlet技术，Interceptor属于SpringMVC技术
+* 拦截内容不同：Filter对所有访问进行增强，Interceptor仅对SpringMVC的访问进行增强
 
 
 
